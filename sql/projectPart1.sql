@@ -32,6 +32,8 @@ insert into Information values('Wisconsin','Madison',4751000,	56154,	'Spencer Tr
   select * from Information where Area<60000 and Population >10000000;
 
   --question3
-   select * from Information order by Population;
+  create view sorting as select * from Information ;
+
+ select * from sorting order by Population;
 
    use Famous_sort;
